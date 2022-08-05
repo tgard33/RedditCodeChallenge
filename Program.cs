@@ -22,9 +22,20 @@
         double num3 = Convert.ToDouble(Console.ReadLine());
         double num4 = Convert.ToDouble(Console.ReadLine());
 
-        double result = (num1 + num2 + num3 + num3 + num4) / 4;
+        double result = (num1 + num2 + num3 + num4) / 4;
         
         Console.WriteLine($"The result is: {result}");
         Console.ReadKey();
+
+
+        //Better Solution
+        List<int> nums = new List<int> { 1, 2, 3, 4, 5 };
+
+        double averages = 0;
+        foreach (int num in nums)
+        {
+            averages += num;
+        }
+        Console.WriteLine(averages / nums.Count);
     }
 }
